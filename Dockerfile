@@ -12,6 +12,6 @@ RUN echo "root:1234" | chpasswd \
     && mv target/*.jar /app/app.jar \
     && rm -rf /tmp/build
 
-CMD ["java", "-Xmx200m", "-jar", "/app/app.jar", "--spring.profiles.active=${active_config}"]
+CMD ["java", "-Xmx200m", "-jar", "/app/app.jar", "--spring.profiles.active=${active_cnfig}"]
 
-EXPOSE 1111
+EXPOSE 8763
