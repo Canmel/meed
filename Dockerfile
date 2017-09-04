@@ -15,4 +15,3 @@ RUN echo "root:1234" | chpasswd \
 CMD ["java", "-Xmx200m", "-jar", "/app/app.jar", "--spring.profiles.active=${active_config}"]
 
 EXPOSE 1111
-EXPOSE 1112
